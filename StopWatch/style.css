@@ -1,0 +1,43 @@
+.wrap { 
+    border: 1px solid black; 
+    padding: 10px 20px;
+    margin: auto;
+    width: 200px;
+}
+h1 { 
+    padding: 10px 20px;
+    margin: auto;
+    width: auto;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey; 
+    border-bottom: 0.1px solid darkslategrey;
+}
+.box {
+    padding: 0 20px;
+    text-align: center;
+}
+p { 
+    padding: 15px 10px;
+    margin: 0;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black; 
+}
+
+/* 알람 버튼 스타일 */
+button { 
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: center;
+    padding: 3px 5px;
+    margin: 0;
+    font-size: 14px;
+    background-color: rgb(64, 110, 110);
+    color: #fff;
+    border: 2px solid darkslategrey;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+  background-color: rgba(47, 79, 79, 0.7);
+}
