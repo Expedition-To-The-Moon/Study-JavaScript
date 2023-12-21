@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fffacd;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+}
+
+.app {
+  width: 100%;
+  max-width: 500px;
+}
+.app header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.app header h1 {
+  color: #385772;
+  font-size: 26px;
+  font-weight: 500;
+  font-family: "Rubik Doodle Shadow";
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.3rem 0;
+  padding: 0.3rem;
+  border: 1px solid rgb(248, 212, 158);
+  background-color: #ffdead83;
+  border-radius: 2px;
+}
+.item input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+.item input[type="text"] {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  flex: 1 1 0%;
+  font-weight: 400;
+  height: 100%;
+  margin-right: 0.5rem;
+}
+.item input[type="text"]:not(:disabled) {
+  border-bottom: 1.5px solid #fff;
+}
+.item .complete {
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+.item:hover,
+.item:focus-within {
+  outline: 2.5px solid #ffdead;
+}
+
+/* button */
+button {
+  color: #385772;
+  border: 0.1px solid;
+  border-radius: 5px;
+  background-color: #ffdead;
+  margin-left: 0.3rem;
+  cursor: pointer;
+  opacity: 0.8;
+}
+button:hover {
+  opacity: 1;
+}
+
+.app header button {
+  font-size: 18px;
+  padding: 0.15rem;
+}
+.actions button {
+  font-size: 14px;
+  padding: 0.1rem;
+}
