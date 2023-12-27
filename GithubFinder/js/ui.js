@@ -13,6 +13,7 @@ class UI {
               <a href="${user.html_url}" target="_blank" class="btn btn-primary btn-block mb-4">View Profile</a>
             </div>
             <div class="col-md-9">
+              <img src="https://ghchart.rshah.org/${user.login}" />
               <span class="badge badge-primary">Public Repos: ${user.public_repos}</span>
               <span class="badge badge-secondary">Public Gists: ${user.public_gists}</span>
               <span class="badge badge-success">Followers: ${user.followers}</span>
