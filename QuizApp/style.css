@@ -1,0 +1,94 @@
+:root {
+    --basic : #808080;
+    --wrong : #ff0000;
+    --correct : #0f8000;
+}
+
+body {
+    --var-color: var(--basic);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--var-color);
+}
+body.correct {
+    --var-color: var(--correct);
+}
+body.wrong {
+    --var-color: var(--wrong);
+}
+
+.con {
+    width: 800px;
+    max-width: 70%;
+    height: 25%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#quiz-con {
+    width: 100%;
+}
+#quiz {
+    background-color: rgb(210, 250, 246);
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin:20px 0;
+}
+.btn {
+    --var-color: var(--basic);
+    border: 1.5px solid var(--var-color);
+    color: var(--var-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #000;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+.btn.correct {
+    --var-color: var(--correct);
+    color: var(--var-color);
+    font-size: large;
+    font-weight: bold;
+}
+.btn.wrong {
+    --var-color: var(--wrong);
+    color: var(--var-color);
+}
+
+.start, .next {
+    font-size: 1,5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+.control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
